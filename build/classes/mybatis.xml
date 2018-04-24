@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<properties resource="db.properties"/>
+	
+	<settings>
+		<setting name="useGeneratedKeys" value="true"/>
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+		<setting name="logImpl" value="LOG4J"/>
+		<setting name="mapUnderscoreToCamelCase" value="false"/>
+		<!-- 
+		<setting name="cacheEnabled" value="true"/>
+		<setting name="lazyLoadingEnabled" value="true"/>
+		<setting name="multipleResultSetsEnabled" value="true"/>
+		<setting name="useColumnLabel" value="true"/>
+		<setting name="useGeneratedKeys" value="false"/>
+		<setting name="autoMappingBehavior" value="PARTIAL"/>
+		<setting name="defaultExecutorType" value="SIMPLE"/>
+		<setting name="defaultStatementTimeout" value="25"/>
+		<setting name="safeRowBoundsEnabled" value="false"/>
+		<setting name="mapUnderscoreToCamelCase" value="false"/>
+		<setting name="localCacheScope" value="SESSION"/>
+		<setting name="jdbcTypeForNull" value="OTHER"/>
+		<setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString"/>
+		 -->
+	</settings>
+	
+	<typeAliases>
+		<!-- 需要在实体类添加@Alias("别名") -->
+		<typeAlias type="java.lang.Byte" alias="Byte"/>
+		<typeAlias type="java.lang.Short" alias="Short"/>
+		<typeAlias type="java.lang.Integer" alias="Integer"/>
+		<typeAlias type="java.lang.Long" alias="Long"/>
+		<typeAlias type="java.lang.Float" alias="Float"/>
+		<typeAlias type="java.lang.Double" alias="Double"/>
+		<typeAlias type="java.lang.Boolean" alias="Boolean"/>
+		<typeAlias type="java.lang.Character" alias="Character"/>
+		<typeAlias type="java.lang.String" alias="String"/>
+		<typeAlias type="java.util.Date" alias="Date"/>
+		<package name="com.hubson.model"/>
+	</typeAliases>
+	<mappers>
+		<package name="com.hudson.mapper"/>
+	</mappers>
+</configuration>
