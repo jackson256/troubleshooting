@@ -19,8 +19,7 @@
 		<tr>
 			<th>封面</th><th>书名</th><th>作者</th><th>价格</th>
 		</tr>
-		
-		<c:forEach items="${requestScope.book_list }" var="book>
+		<c:forEach items="${requestScope.book_list }" var="book">
 			<tr>
 				<td><img src="images/${book.image} }" height="60"></td>
 				<td>${book.name }</td>
